@@ -1,0 +1,28 @@
+[
+    {
+        "sectionName": "Fullstack Modul 1 (HTML & CSS)",
+        "items": [
+            {
+                "title": "Oppgave 1",
+                "folderName": "HTMLCSSModul1Oppgave1"
+            },
+            {
+                "title": "Oppgave 2",
+                "folderName": "HTMLCSSModul1Oppgave2"
+            }
+        ]
+    },
+    {
+        "sectionName": "Fullstack Modul 1 (Javascript Basic)",
+        "items": [
+            {
+                "title": "Oppgave 1",
+                "folderName": "JavascriptModul1Oppgave1"
+            },
+            {
+                "title": "Oppgave 2",
+                "folderName": "JavascriptModul1Oppgave2"
+            }
+        ]
+    }
+]

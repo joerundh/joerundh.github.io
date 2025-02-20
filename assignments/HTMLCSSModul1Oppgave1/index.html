@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style/main.css">
+    <script src="https://fred-wang.github.io/mathml.css/mspace.js"></script>
+    <title>Modul 1 Oppgave 1 HTML and CSS</title>
+</head>
+<body>
+    <header>
+        <h1>Trial by Error</h1>
+        <div id="menu">
+            <script language="javascript" src="./js/menu.js"></script>
+        </div>
+    </header>
+    <main>
+        <div id="home">
+            <h2>Content header</h2>
+            <h4>Smaller content header</h4>
+            <p>First paragraph, with some filler text just to see how line break acts when the paragraphs and the headers have such-and-such values for margins and whatnot in the style specification.</p>
+            <p class="center"><img src="./images/thisisabird.png" alt="This is a bird"></p>
+            <p>Above you may observe a picture of a bird, with a text that reads "This is a bird". This is to let the observer know that the bird is in fact a bird.</p>
+            <h4>Another content header</h4>
+            <p>This is the content of paragraph 2. Meagre, you may say. And it's true.</p>
+        </div>
+        <div id="info">
+            <h2>Information</h2>
+            <h4>FYI</h4>
+            <p>This page is not really about anything. Ergo it will be filled with semi-random writing.</p>
+            <p>Might this be a good time to bring up Lorem Ipsum? Here it is:</p>
+            <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores esse corporis atque labore optio maxime perferendis eaque odio aspernatur cupiditate error quam fuga deleniti reprehenderit facere ipsum voluptas, consequatur tempora.</blockquote>
+            <p>That's real, certifiable nonsense Latin, straight outta VS Code.</p>
+            <h4>Information theory</h4>
+            <p>Because <i>info</i>? For <i>information</i>??</p>
+            <p>The basis of information theory is the <i>information content</i> of the probability <i>P</i>(<i>X</i> = <i>x</i>) of the specific outcome <i>x</i> of a random variable <i>X</i>. It is defined as</p>
+            <p class="center"><i>I</i>(<i>x</i>) = -</i>log<i>P</i>(<i>X</i> = <i>x</i>)</p>
+            <p>This can be thought as the <i>surprisal</i> of the outcome <i>x</i> occurring. This is especially clear in the boundary cases: when <i>P</i>(<i>X</i> = <i>x</i>) = 0, the logarithm is undefined, and the information content is infinite; i.e. if an outcome has a zero probability, the surprisal of its occurrence is unbounded; if <i>P</i>(<i>X</i> = <i>x</i>) = 1</i>, the outcome <i>x</i> is guaranteed, and the surprisal of the outcome is nil.</p>
+            <p>In other words, <i>I</i>(<i>x</i>) quantifies <i>how much information is gained</i> from finding that a random process results in the result <i>X = x</i>.</p>
+            <p>Assume now that <i>X</i> takes one of several values <i>x &#x2208; E</i> for a set of values <i>E</i>, each <i>x</i> corresponding to a probability <i>P</i>(<i>X</i> = <i>x</i>), such that each <i>P</i>(<i>X</i> = <i>x</i>) is non-negative, and the sum of <i>P</i>(<i>X</i> = <i>x</i>) for all <i>x</i> is 1. The set { <i>P</i>(<i>X</i> = <i>x</i>) | <i>x</i> &#x2208; <i>E</i> } then defines a probability distribution. One may then define the <i>average</i> information content of the probability distribution <i>{P(X = x)}</i> the outcomes <i>x</i>, with respect to the probability distribution itself:</p>
+            <p class="center">&#x27E8;<i>I(x)</i>&#x27E9;<i> = -</i>&#x27E8;log<i>P(X=x)</i>&#x27E9<i> = -</i><math><munderover><mo>&sum;</mo><mi>x</mi><mi></mi></munderover></math><i>P(X = x) </i>log<i>P(X = x)</i></p>
+            <p>This is also denoted <i>H</i>(<i>X</i>), and is called the <i>Shannon entropy</i> of the random variable <i>X</i>.</p>
+        </div>
+        <div id="more">
+            <h2>Some notes on these files</h2>
+            <h4>Headers</h4>
+            <p>It may be noticed in the source code that two types of headers, H2 and H3, are used to headline the different pages here. The reason for this is that some pages might take a H2 header and then go straight to a paragraph of normal text. In that case, an issue arises with the distance between the header and the text. To account for this, H2 and H3 are set to have different margin values in the CSS, so that when H4 is used above the first paragraph, H2 may be used, while with no H4, H3 is used for the header.</p>
+            <p>It is hoped that this was somewhat coherent an explanation. An illustration can be found by clicking "More still" in the menu.</p>
+        </div>
+        <div id="morestill">
+            <h3>Not found</h3>
+            <p>No content could be found to put into this "page".</p>
+            <h4>Oh, but oh...</h4>
+            <p>Just to have addressed it: though Javascript was beyond the scope of this, it seemed preferable to making x number of separate HTML documents, and then progressively having to update the different common parts of all of them, particularly the menu.<p>
+            <p>The (in my view) small price for this is that refreshing the page takes you back to the main page. But at least the developer sitting here has an easier time.</p>
+            <p>The next sentence will be put into an enumerated list according to word order:</p>
+            <p><ol>
+                <li>If</li>
+                <li>that's</li>
+                <li>a</li>
+                <li>problem,</li>
+                <li>We</li>
+                <li>(or</li>
+                <li>I,</li>
+                <li>rather)</li>
+                <li>can</li>
+                <li>only</li>
+                <li>apoligize,</li>
+                <li>but</li>
+                <li>what's</li>
+                <li>done</li>
+                <li>is</li>
+                <li>done.</li>
+            </ol></p>
+        </div>
+        <div id="contact">
+            <h2>Contact</h2>
+            <h4>Contact information</h4>
+            <p>If you feel the urge to drop a message of any kind, you may do so to the broken answering machine that watches over the phone reachable with the following number:
+            <p class="center"><i>123 45 678</i></p>
+            <p>... no, not really. I don't a phone number that I will put here. I do have a sense of self-preservation.</p>
+            <h4>Contact transformations</h4>
+            <p>Yes, similar joke as before.</p>
+            <p>Loosely speaking, a <i>contact transformation</i> of a curve in a multi-dimensional space is a transformation which maps tangent curves to tangent curves.</p>
+            <p>Whatever that means. Moreover, I actually can't say anything more about them. But maybe just as well that the joke is cut sho</p>
+        </div>
+    </main>
+    <footer>
+        <p>This was brought to you by your browser and its creators</p>
+        <p>2025</p>
+    </footer>
+</body>
+</html>

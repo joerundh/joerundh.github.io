@@ -1,0 +1,27 @@
+div div#sedans-div {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+}
+
+div div footer button#sedans-a {
+    color: hsl(31, 77%, 52%);
+}
+
+div div#suvs-div {
+    background-color: hsl(184, 100%, 22%);
+}
+
+div div footer button#suvs-a {
+    color: hsl(184, 100%, 22%);
+}
+
+div div#luxury-div {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+
+div div footer button#luxury-a {
+    color: hsl(179, 100%, 13%);
+}
