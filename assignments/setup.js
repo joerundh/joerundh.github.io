@@ -33,7 +33,7 @@ function generateSectionList(sectionIndex, sectionObject) {
             listItem.appendChild(aElement);
 
             let copyElement = document.createElement("a");
-            copyElement.href="#";
+            copyElement.href="javascript:void(0);";
             copyElement.addEventListener("click", (event) => {
                 navigator.clipboard.writeText(`https://joerundh.github.io/assignments/${item.folderName}/`);
             });
