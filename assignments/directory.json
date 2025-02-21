@@ -4,11 +4,11 @@
         "items": [
             {
                 "title": "Oppgave 1",
-                "folderName": "HTMLCSSModul1Oppgave1"
+                "folderName": "Modul1HTMLCSS/Oppgave1"
             },
             {
                 "title": "Oppgave 2",
-                "folderName": "HTMLCSSModul1Oppgave2"
+                "folderName": "Modul1HTMLCSS/Oppgave2"
             }
         ]
     },
@@ -17,11 +17,11 @@
         "items": [
             {
                 "title": "Oppgave 1",
-                "folderName": "JavascriptModul1Oppgave1"
+                "folderName": "Modul1JavascriptBasic/Oppgave1"
             },
             {
                 "title": "Oppgave 2",
-                "folderName": "JavascriptModul1Oppgave2"
+                "folderName": "Modul1JavascriptBasic/Oppgave2"
             }
         ]
     }
