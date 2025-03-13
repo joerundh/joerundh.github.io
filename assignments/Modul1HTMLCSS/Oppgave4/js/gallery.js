@@ -7,7 +7,7 @@ gallery.appendChild(loadMessage);
 let entries;
 let viewing = -1;
 
-fetch("../images/gallery/galleryindex.json")
+fetch("./images/gallery/galleryindex.json")
     .then(response => response.json())
     .then(data => {
         gallery.removeChild(loadMessage);

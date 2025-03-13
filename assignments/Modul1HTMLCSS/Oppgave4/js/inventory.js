@@ -5,7 +5,7 @@ loadMessage.className = "msg";
 loadMessage.innerText = "Laster inventar...";
 list.appendChild(loadMessage);
 
-fetch("../inventory/inventoryindex.json")
+fetch("./inventory/inventoryindex.json")
     .then(response => response.json())
     .then(data => {
         list.removeChild(loadMessage);
