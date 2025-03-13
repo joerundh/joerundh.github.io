@@ -5,7 +5,9 @@ loadMessage.className = "msg";
 loadMessage.innerText = "Laster inventar...";
 list.appendChild(loadMessage);
 
-fetch(`${window.location}/json/inventory.json`)
+let rootPath = window.location.href.slice(0, window.location.href.lastIndexOf("/"));
+
+fetch(`${rootPath}/json/inventory.json`)
     .then(response => response.json())
     .then(data => {
         list.removeChild(loadMessage);
@@ -16,7 +18,7 @@ fetch(`${window.location}/json/inventory.json`)
     
             let feature = document.createElement("div");
             feature.className = "feature";
-            feature.style.backgroundImage = `url("${window.location}/${obj.feature}")`;
+            feature.style.backgroundImage = `url("${rootPath}/${obj.feature}")`;
             item.append(feature);
             
             let description = document.createElement("div");

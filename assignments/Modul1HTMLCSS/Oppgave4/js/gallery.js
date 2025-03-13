@@ -7,7 +7,9 @@ gallery.appendChild(loadMessage);
 let entries;
 let viewing = -1;
 
-fetch(`${window.location}/json/gallery.json`)
+let rootPath = window.location.href.slice(0, window.location.href.lastIndexOf("/"));
+
+fetch(`${rootPath}/json/gallery.json`)
     .then(response => response.json())
     .then(data => {
         gallery.removeChild(loadMessage);
@@ -16,7 +18,7 @@ fetch(`${window.location}/json/gallery.json`)
             entry.className = "gallery-entry";
 
             let pic = document.createElement("img");
-            pic.src = `${window.location}/${obj.thumbnail}`;
+            pic.src = `${rootPath}/${obj.thumbnail}`;
             entry.append(pic);
 
             pic.addEventListener("click", event => {
@@ -29,7 +31,7 @@ fetch(`${window.location}/json/gallery.json`)
                 preview.className = "preview";
                 
                 let img = document.createElement("img");
-                img.src = `${window.location.pathname}/${obj.filename}`;
+                img.src = `${rootPath}/${obj.filename}`;
 
                 let footer = document.createElement("div");
                 footer.className = "footer";
