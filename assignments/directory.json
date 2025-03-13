@@ -11,6 +11,10 @@
                 "folderName": "Modul1HTMLCSS/Oppgave2"
             },
             {
+                "title": "Oppgave 3",
+                "folderName": "Modul1HTMLCSS/Oppgave3"
+            },
+            {
                 "title": "Oppgave 4",
                 "folderName": "Modul1HTMLCSS/Oppgave4"
             }
@@ -30,6 +34,10 @@
             {
                 "title": "Oppgave 3",
                 "folderName": "Modul1JavascriptBasic/Oppgave3"
+            },
+            {
+                "title": "Oppgave 4",
+                "folderName": "Modul1JavascriptBasic/Oppgave4"
             }
         ]
     }
