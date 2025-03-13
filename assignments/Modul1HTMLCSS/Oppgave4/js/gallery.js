@@ -99,6 +99,7 @@ fetch("../images/gallery/galleryindex.json")
     })
     .catch(error => {
         let msg = document.createElement("p");
+        console.log(error)
         msg.innerText = "(Galleriet er tomt)";
         gallery.append(msg);
     });
