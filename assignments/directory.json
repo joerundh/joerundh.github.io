@@ -41,4 +41,13 @@
             }
         ]
     }
+    {
+        "sectionName": "Other",
+        "items": [
+            {
+                "title": "Design Thinking",
+                "folderName": "Modul1JavascriptBasic/Oppgave1"
+            }
+        ]
+    }
 ]
