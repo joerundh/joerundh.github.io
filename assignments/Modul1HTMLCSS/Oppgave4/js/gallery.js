@@ -7,7 +7,7 @@ gallery.appendChild(loadMessage);
 let entries;
 let viewing = -1;
 
-fetch(`${window.location.pathname}/json/gallery.json`)
+fetch(`${window.location}/json/gallery.json`)
     .then(response => response.json())
     .then(data => {
         gallery.removeChild(loadMessage);
@@ -16,7 +16,7 @@ fetch(`${window.location.pathname}/json/gallery.json`)
             entry.className = "gallery-entry";
 
             let pic = document.createElement("img");
-            pic.src = `${window.location.pathname}/${obj.thumbnail}`;
+            pic.src = `${window.location}/${obj.thumbnail}`;
             entry.append(pic);
 
             pic.addEventListener("click", event => {
