@@ -3,7 +3,7 @@
         "title":        "Mosaikk 1",
         "artist":       "Ukjent",
         "filename":     "images/gallery/mosaic01.jpg",
-        "thumb":        "images/gallery/thumbnails/mosaic01_thumb.jpg"
+        "thumbnail":    "images/gallery/thumbnails/mosaic01_thumb.jpg"
     },
     {
         "title":        "Akvarell 1",
