@@ -63,13 +63,13 @@ fetch(`${rootPath}/json/gallery.json`)
                 let jumpLeft = (event) => {
                     viewing = viewing === 0 ? arr.length - 1 : viewing - 1;
                     let prevObj = arr[viewing];
-                    img.src = `../images/gallery/${prevObj.filename}`;
+                    img.src = `${rootPath}/${prevObj.filename}`;
                     description.innerHTML = `${prevObj.artist}: <i>${prevObj.title}</i>`;
                 }
                 let jumpRight = (event) => {
                     viewing = viewing === arr.length - 1 ? 0 : viewing + 1;
                     let prevObj = arr[viewing];
-                    img.src = `../images/gallery/${prevObj.filename}`;
+                    img.src = `${rootPath}/${prevObj.filename}`;
                     description.innerHTML = `${prevObj.artist}: <i>${prevObj.title}</i>`;
                 };
                 let keyPressed = event => {
