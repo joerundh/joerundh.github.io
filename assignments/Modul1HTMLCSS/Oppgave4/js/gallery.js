@@ -7,7 +7,7 @@ gallery.appendChild(loadMessage);
 let entries;
 let viewing = -1;
 
-fetch("./images/gallery/galleryindex.json")
+fetch(`${window.location.origin}/json/gallery.json`)
     .then(response => response.json())
     .then(data => {
         gallery.removeChild(loadMessage);
@@ -16,7 +16,7 @@ fetch("./images/gallery/galleryindex.json")
             entry.className = "gallery-entry";
 
             let pic = document.createElement("img");
-            pic.src = `../images/gallery/${obj.filename}`;
+            pic.src = `${window.location.origin}/${obj.thumbnail}`;
             entry.append(pic);
 
             pic.addEventListener("click", event => {
@@ -29,7 +29,7 @@ fetch("./images/gallery/galleryindex.json")
                 preview.className = "preview";
                 
                 let img = document.createElement("img");
-                img.src = `../images/gallery/${obj.filename}`;
+                img.src = `${window.location.origin}/${obj.filename}`;
 
                 let footer = document.createElement("div");
                 footer.className = "footer";
