@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @property --chessboard-background {
+            syntax: "";
+            inherits: false;
+
+        }
+
+        :root {
+            --chessboard-light: #B8B8B8;
+            --chessboard-dark: #909090;
+            --chessboard: conic-gradient(
+                    var(--chessboard-light) 0deg,
+                    var(--chessboard-light) 90deg,
+                    var(--chessboard-dark) 90deg,
+                    var(--chessboard-dark) 180deg,
+                    var(--chessboard-light) 180deg,
+                    var(--chessboard-light) 270deg,
+                    var(--chessboard-dark) 270deg,
+                    var(--chessboard-dark) 360deg
+                ) repeat top center / 20px 20px;
+        }
+
+        body {
+            background: var(--chessboard);
+        }
+
+        p {
+            background-color: var(--chessboard-light);
+            width: fit-content;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <p>See file "script.js" in this same folder.</p>
+    <script language="javascript" src="script.js"></script>
+</body>
+</html>

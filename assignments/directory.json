@@ -42,6 +42,15 @@
         ]
     },
     {
+        "sectionName": "Fullstack Modul 2 (Javascript Advanced)",
+        "items": [
+            {
+                "title": "Minioppgave",
+                "folderName": "Modul2JavascriptAdvanced/Minioppgave"
+            }
+        ]
+    },
+    {
         "sectionName": "Other",
         "items": [
             {
