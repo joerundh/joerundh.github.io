@@ -55,6 +55,28 @@
         ]
     },
     {
+        "sectionName": "Javascript Advanced",
+        "items": [
+            {
+                "title": "Minioppgave",
+                "folderName": "Javascript-Advanced/Minioppgave"
+            },
+            {
+                "title": "Oppgave 1",
+                "folderName": "Javascript-Advanced/Oppgave-1"
+            }
+        ]
+    },
+    {
+        "sectionName": "CSS Advanced",
+        "items": [
+            {
+                "title": "Oppgave 1",
+                "folderName": "CSS-Advanced/Oppgave-1"
+            }
+        ]
+    },
+    {
         "sectionName": "Other",
         "items": [
             {

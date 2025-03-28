@@ -1,0 +1,214 @@
+@font-face {
+    font-family: "barlow Semi Condensed";
+    src: url("fonts/BarlowSemiCondensed-Regular.ttf");
+}
+
+:root {
+    --purple50: hsl(260, 100%, 95%);
+    --purple300: hsl(264, 82%, 80%);
+    --purple500: hsl(263, 55%, 52%);
+    --white: hsl(0, 0%, 100%);
+    --grey100: hsl(214, 17%, 92%);
+    --grey200: hsl(0, 0%, 81%);
+    --grey400: hsl(224, 10%, 45%);
+    --grey500: hsl(217, 19%, 35%);
+    --darkblue: hsl(219, 29%, 14%);
+    --black: hsl(0, 0%, 7%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-family: "Barlow Semi Condensed";
+    font-weight: 500;
+    background-color: var(--grey100);
+}
+
+#testimonials {
+    width: 1110px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "entry1 entry1 entry2 entry5"
+    "entry3 entry4 entry4 entry5";
+    gap: 16px 20px;
+}
+
+/*
+Entry styles
+*/
+
+.entry {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+    box-shadow: 30px 30px 20px var(--grey200);
+    border-radius: 10px;
+    gap: 10px
+}
+
+/*
+Entry header
+*/
+
+.entry-header {
+    display: grid;
+    grid-template-columns: 42px auto;
+    grid-template-areas:
+    "feature name"
+    "feature title";
+    gap: 0px 16px;
+}
+
+.entry-feature {
+    grid-area: feature;
+}
+
+.entry-feature img {
+    width: 42px;
+    border-radius: 21px;
+}
+
+.entry-name {
+    grid-area: name;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: none;
+}
+
+.entry-title {
+    grid-area: title;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+Entry content
+*/
+
+.testimonial-header {
+    height: fit-content;
+    font-weight: 600;
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+
+.testimonial-content {
+    line-height: 1.4em;
+    flex: auto;
+    quotes: "“ " " ”";
+}
+
+.testimonial-content::before {
+    content: open-quote;
+}
+
+.testimonial-content::after {
+    content: close-quote;
+}
+
+/*
+Placements and color schemes
+*/
+
+.entry-1 {
+    grid-area: entry1;
+    background-image:  url("images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+    background-position-y: top;
+}
+
+.entry-2 {
+    grid-area: entry2;
+}
+.entry-3 {
+    grid-area: entry3;
+}
+.entry-4 {
+    grid-area: entry4;
+}
+.entry-5 {
+    grid-area: entry5;
+}
+
+.entry-2 {
+    grid-area: entry2;
+}
+.entry-3 {
+    grid-area: entry3;
+}
+.entry-4 {
+    grid-area: entry4;
+}
+.entry-5 {
+    grid-area: entry5;
+}
+
+.entry-1 .entry-header .entry-feature img {
+    border: 2px solid var(--purple300);
+}
+
+.entry-2 .entry-header .entry-feature img {
+    border: 2px solid var(--grey200);
+}
+
+.entry-4 .entry-header .entry-feature img {
+    border: 2px solid var(--purple500);
+}
+
+.white-text {
+    color: var(--white);
+}
+
+.darkgrey-text {
+    color: var(--grey500);
+}
+
+.lightgrey-text {
+    color: var(--grey200);
+}
+
+.white-background {
+    background-color: var(--white);
+}
+
+.grey-background {
+    background-color: var(--grey500);
+}
+
+.darkblue-background {
+    background-color: var(--darkblue);
+}
+
+.purple-background {
+    background-color: var(--purple500);
+}
+
+.purple-background>div>div>img {
+    border-width: 50px;
+}
+
+/*
+Atribution
+*/
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+}
