@@ -29,12 +29,12 @@ function generateSectionList(sectionIndex, sectionObject) {
             let aElement = document.createElement("a");
             aElement.href = `./${item.folderName}`;
             aElement.target = "_blank";
-            aElement.title = "Copy URL";
             aElement.innerHTML = `${sectionIndex + 1}.${itemIndex + 1} ${item.title}`;
             listItem.appendChild(aElement);
 
             let copyElement = document.createElement("a");
             copyElement.href="javascript:void(0);";
+            copyElement.title = "Copy URL";
             copyElement.addEventListener("click", (event) => {
                 navigator.clipboard.writeText(`https://joerundh.github.io/assignments/${item.folderName}/`);
             });
