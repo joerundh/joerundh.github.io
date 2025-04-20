@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/favourites.css">
+    <link rel="stylesheet" href="./css/search.css">
+    <link rel="stylesheet" href="./css/bookprofile.css">
+    <link rel="stylesheet" href="./css/authorprofile.css">
+    <script type="module" src="./js/app.js" defer="true"></script>
+    <title>Book and Author Search</title>
+</head>
+<body>
+    <header>
+        <button id="goto-search" title="Search">
+            <img src="./css/images/search-icon.svg">
+        </button>
+        <p id="section-title"></p>
+        <button id="goto-user-profile" title="User profile">
+            <img src="./css/images/profile-icon.svg">
+        </button>
+    </header>
+    <main>
+        <section data-section-title="My favourites">
+            <h3>Favourite books</h3>
+            <div class="horizontal" id="favourite-books-list"></div>
+            <button id="clear-favourite-books">Remove all favourite books</button>
+            <h3>Favourite authors</h3>
+            <div class="horizontal" id="favourite-authors-list"></div>
+            <button id="clear-favourite-authors">Remove all favourite authors</button>
+        </section>
+        <section data-section-title="Search">
+            <form id="search-form">
+                <p>
+                    <label for="search-title-input" required="true">Title:</label>
+                    <input name="title" id="search-title-input" value="" autocomplete="off">
+                </p>
+                <p>
+                    <label for="search-author-input">Author:</label>
+                    <input name="author" id="search-author-input" value="" autocomplete="off">
+                </p>
+                <p>
+                    <label for="search-year-input">Year:</label>
+                    <input name="year" id="search-year-input" value="" autocomplete="off">
+                </p>
+                <div id="search-buttons">
+                    <button id="search-submit">Search</button>
+                    <button id="search-reset">Reset</button>
+                </div>
+            </form>
+            <div id="search-message"></div>
+            <div id="search-results">
+                <h2>Results: <span id="search-results-viewing"></span> out of <span id="search-results-total"></span></h2>
+                <div id="search-results-settings">
+                    <span id="search-results-sorting">
+                        <label for="search-results-sorting-select">Sort by:</label>
+                        <select id="search-results-sorting-select">
+                            <option value="0">Relevance</option>
+                            <option value="1">Title A-Z</option>
+                            <option value="2">Title Z-A</option>
+                            <option value="3">Author A-Z</option>
+                            <option value="4">Author Z-A</option>
+                            <option value="5">Year published, ascending</option>
+                            <option value="6">Year published, descending</option>
+                        </select>
+                    </span>
+                    <span id="search-results-per-page">
+                        <label for="search-results-per-page-input">Results per page:</label>
+                        <input type="text" id="search-results-per-page-input" autocomplete="off">
+                    </span>
+                </div>
+                <ul id="search-results-list"></ul>
+                <div id="search-results-pages">
+                    <button id="search-results-first-page">First</button>
+                    <button id="search-results-prev-page">Prev</button>
+                    <p>
+                        <select id="search-results-current-page"></select><span>/</span><span id="search-results-page-count"></span>
+                    </p>
+                    <button id="search-results-next-page">Next</button>
+                    <button id="search-results-last-page">Last</button>
+                </div>
+            </div>
+        </section>
+        <section data-section-title="Book profile">
+            <div id="book-profile-message"></div>
+            <div id="book-profile">
+                <div id="book-profile-cover-loading"></div>
+                <div id="book-profile-cover"></div>
+                <p id="book-profile-title"></p>
+                <p id="book-profile-year"></p>
+                <div id="book-profile-authors"></div>
+                <div>
+                    <h3>Description</h3>
+                    <p id="book-profile-description"></p>
+                </div>
+                <div id="book-profile-options">
+                    <button id="book-profile-favourite">
+                        <img id="book-profile-favourite-icon">
+                        <span id="book-profile-favourite-label"></span>
+                    </button>
+                    <button id="book-profile-view-external">
+                        <img src="../css/images/export-share-icon.svg">
+                        <span>View in Open Library</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section data-section-title="Author profile">
+            <!--Author profile-->
+            <div id="author-profile-message"></div>
+            <div id="author-profile">
+                <div id="author-profile-feature-loading"></div>
+                <div id="author-profile-feature"></div>
+                <p id="author-profile-name"></p>
+                <p id="author-profile-years"></p>
+                <div id="author-profile-authors"></div>
+                <div id="author-profile-bio">
+                    <h3>Bio</h3>
+                    <p id="author-profile-bio-content"></p>
+                </div>
+                <div id="author-profile-options">
+                    <button id="author-profile-favourite">
+                        <img id="author-profile-favourite-icon">
+                        <span id="author-profile-favourite-label"></span>
+                    </button>
+                    <button id="author-profile-view-external">
+                        <img src="../css/images/export-share-icon.svg">
+                        <span>View in Open Library</span>
+                    </button>
+                    <button id="author-profile-search">
+                        <img src="../css/images/search-icon.svg">
+                        <span>Search for books</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>2025 No rights reserved - Powered by the <a href="https://openlibrary.org/developers/api" target="_blank">Open Library APIs<img src="../css/images/export-share-icon.svg"></a></p>
+    </footer>
+</body>
+</html>

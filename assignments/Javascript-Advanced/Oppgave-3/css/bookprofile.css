@@ -1,0 +1,100 @@
+#book-profile-message {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+}
+
+#book-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+#book-profile-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    background-color: inherit;
+    font-family: inherit;
+}
+
+#book-profile-year {
+    font-size: 0.8rem;
+}
+
+#book-profile-year >*::before {
+    content: "(";
+}
+
+#book-profile-year > *::after {
+    content: ")";
+}
+
+#book-profile-cover-loading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+#book-profile-cover {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#book-profile-cover .missing-cover {
+    width: 300px;
+    filter: contrast(0%);
+}
+
+#book-profile-authors {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+#book-profile-authors button {
+    border: none;
+    font-family: inherit;
+    background-color: inherit;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+#book-profile-authors button:hover {
+    text-decoration: underline;
+}
+
+#book-profile-options {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+    font-family: inherit;
+}
+
+#book-profile-options button {
+    width: calc((100% - 10px)/2);
+    height: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+#book-profile-options button img {
+    height: 20px;
+}
