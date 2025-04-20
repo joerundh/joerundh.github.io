@@ -21,7 +21,7 @@
     max-width: 200px;
 }
 
-#favourite-books-list .horizontal-item button, #favourite-authors-list .horizontal-item .author-name {
+#favourite-books-list .horizontal-item .book-title, #favourite-authors-list .horizontal-item .author-name {
     width: 100%;
     border: none;
     display: flex;
@@ -33,7 +33,7 @@
     white-space: wrap;
 }
 
-#favourite-books-list .horizontal-item button:hover, #favourite-authors-list .horizontal-item .author-name:hover {
+#favourite-books-list .horizontal-item .book-title:hover, #favourite-authors-list .horizontal-item .author-name:hover {
     text-decoration: underline;
 }
 
