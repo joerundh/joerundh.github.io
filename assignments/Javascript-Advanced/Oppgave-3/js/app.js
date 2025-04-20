@@ -1152,6 +1152,6 @@ If the comments are lackluster (there's that word again), just note that this sc
 alone, say without comments, is slightly less than 1000 lines. Now, that number
 is increased by more than 150.
 
-I swear, eventhough this script took a long time to write, it could probably have 
+Eventhough this script took a long time to write, it could probably have 
 been shortened somewhat. But that's what happens when completing a work in progress.
 */
