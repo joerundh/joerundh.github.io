@@ -52,7 +52,7 @@ function generateLoadingIcon() {
     one pleases
     */
     const loadingIcon = document.createElement("img");
-    loadingIcon.src = "../css/images/loading-icon.svg";
+    loadingIcon.src = "images/loading-icon.svg";
     loadingIcon.className = "loading-icon";
     return loadingIcon;
 }
@@ -140,9 +140,9 @@ function createHorizontalBookListItem(book) {
         /*
         Default cover picture
         */
-        img.src = "../css/images/profile-icon.svg";
+        img.src = "images/profile-icon.svg";
         cover.innerHTML = "";
-        cover.style.backgroundImage = `url("../css/images/book-line-icon.svg")`;
+        cover.style.backgroundImage = `url("images/book-line-icon.svg")`;
     }
     cover.onclick = () => {
         /*
@@ -213,9 +213,9 @@ function createHorizontalAuthorListItem(author) {
                 feature.style.backgroundImage = `url("${img.src}")`;
             });
     } else {
-        img.src = "../css/images/profile-icon.svg";
+        img.src = "images/profile-icon.svg";
         feature.innerHTML = "";
-        feature.style.backgroundImage = `url("../css/images/profile-icon.svg")`;
+        feature.style.backgroundImage = `url("images/profile-icon.svg")`;
     }
     feature.onclick = () => {
         loadAuthorProfile(author["key"]);
@@ -415,7 +415,7 @@ function createResultsListItem(book) {
             .catch(() => {
                 img.onload = null;
                 img.onerror = null;
-                img.src = "../css/images/book-line-icon.svg";
+                img.src = "images/book-line-icon.svg";
                 img.className = "missing-cover";
                 img.title = "Missing cover photo";
                 img.alt = "Missing cover photo"
@@ -423,7 +423,7 @@ function createResultsListItem(book) {
                 cover.append(img);
             });
     } else {
-        img.src = "../css/images/book-line-icon.svg";
+        img.src = "images/book-line-icon.svg";
         img.className = "missing-cover";
         img.title = "Missing cover photo";
         img.alt = "Missing cover photo";
@@ -487,7 +487,7 @@ function createResultsListItem(book) {
 
     const moreInfo = document.createElement("button");
     const infoIcon = document.createElement("img");
-    infoIcon.src = "../css/images/info-icon.svg";
+    infoIcon.src = "images/info-icon.svg";
     moreInfo.append(infoIcon);
 
     /*
@@ -498,11 +498,11 @@ function createResultsListItem(book) {
     const favourite = document.createElement("button");
     const favIcon = document.createElement("img");
     if (favBooks.searchForValue("key", book["key"]).length) {
-        favIcon.src = "../css/images/one-star-icon.svg"
+        favIcon.src = "images/one-star-icon.svg"
         favIcon.style.filter = "none";
         favourite.title = "Remove from favourites";
     } else {
-        favIcon.src = "../css/images/one-star-outline-icon.svg";
+        favIcon.src = "images/one-star-outline-icon.svg";
         favIcon.style.filter = "contrast(0%)";
         favourite.title = "Add to favourites";
     }
@@ -510,7 +510,7 @@ function createResultsListItem(book) {
         const favSearch = favBooks.searchForValue("key", book["key"]);
         if (favSearch.at(0)) {
             favBooks.deleteObject(favSearch[0].objectStorageKey);
-            favIcon.src = "../css/images/one-star-outline-icon.svg";
+            favIcon.src = "images/one-star-outline-icon.svg";
             favIcon.style.filter = "contrast(0%)";
             favourite.title = "Add to favourites";
         } else {
@@ -522,7 +522,7 @@ function createResultsListItem(book) {
                 book["author_name"],
                 book["cover_i"]
             ]);
-            favIcon.src = "../css/images/one-star-icon.svg";
+            favIcon.src = "images/one-star-icon.svg";
             favIcon.style.filter = "none";
             favourite.title = "Remove from favourites";
         }
@@ -532,7 +532,7 @@ function createResultsListItem(book) {
 
     const open = document.createElement("button");
     const openIcon = document.createElement("img");
-    openIcon.src = "../css/images/export-share-icon.svg";
+    openIcon.src = "images/export-share-icon.svg";
     open.append(openIcon);
     open.title = "View in Open Library";
     open.onclick = event => {
@@ -864,7 +864,7 @@ function openBookProfile(book) {
             bookProfileCover.append(cover);
         });
     } else {
-        cover.src = "../css/images/book-line-icon.svg";
+        cover.src = "images/book-line-icon.svg";
         cover.className = "missing-cover";
         bookProfileCoverLoading.innerHTML = "";
         bookProfileCoverLoading.style.display = "none";
@@ -924,12 +924,12 @@ function openBookProfile(book) {
     */
     if (favBooks.searchForValue("key", book["key"]).length) {
         bookProfileFavourite.title = "Remove from favourites";
-        bookProfileFavouriteIcon.src = "../css/images/one-star-icon.svg";
+        bookProfileFavouriteIcon.src = "images/one-star-icon.svg";
         bookProfileFavouriteIcon.style.filter = "none";
         bookProfileFavouriteLabel.textContent = "Remove from favourites";
     } else {
         bookProfileFavourite.title = "Add to favourites";
-        bookProfileFavouriteIcon.src = "../css/images/one-star-outline-icon.svg";
+        bookProfileFavouriteIcon.src = "images/one-star-outline-icon.svg";
         bookProfileFavouriteIcon.style.filter = "contrast(0%)";
         bookProfileFavouriteLabel.textContent = "Add to favourites";
     }
@@ -937,13 +937,13 @@ function openBookProfile(book) {
         const favSearch = favBooks.searchForValue("key", book["key"]);
         if (favSearch.length) {
             favBooks.deleteObject(favSearch[0].objectStorageKey);
-            bookProfileFavouriteIcon.src = "../css/images/one-star-outline-icon.svg";
+            bookProfileFavouriteIcon.src = "images/one-star-outline-icon.svg";
             bookProfileFavouriteIcon.style.filter = "contrast(0%)";
             bookProfileFavouriteLabel.textContent = "Add to favourites";
             bookProfileFavourite.title = "Add to favourites";
         } else {
             favBooks.addObject([ book["key"], book["title"], book["first_publish_year"], book["author_key"], book["author_name"], book["cover_key"] ]);
-            bookProfileFavouriteIcon.src = "../css/images/one-star-icon.svg";
+            bookProfileFavouriteIcon.src = "images/one-star-icon.svg";
             bookProfileFavouriteIcon.style.filter = "none";
             bookProfileFavouriteLabel.textContent = "Remove from favourites";
             bookProfileFavourite.title = "Remove from favourites";
@@ -1053,14 +1053,14 @@ function openAuthorProfile(author) {
             .catch(() => {
                 feature.onload = null;
                 feature.onerror = null;
-                feature.src = "../css/images/profile-icon.svg";
+                feature.src = "images/profile-icon.svg";
                 feature.className = "missing-feature";
                 authorProfileFeatureLoading.innerHTML = "";
                 authorProfileFeatureLoading.style.display = "none";
                 authorProfileFeature.append(feature);
             });
     } else {
-        feature.src = "../css/images/profile-icon.svg";
+        feature.src = "images/profile-icon.svg";
         feature.className = "missing-feature";
         authorProfileFeatureLoading.innerHTML = "";
         authorProfileFeatureLoading.style.display = "none";
@@ -1086,12 +1086,12 @@ function openAuthorProfile(author) {
     Yet another favourite button, but for authors this time
     */
     if (favAuthors.searchForValue("key", author["key"]).length) {
-        authorProfileFavouriteIcon.src = "../css/images/one-star-icon.svg";
+        authorProfileFavouriteIcon.src = "images/one-star-icon.svg";
         authorProfileFavouriteIcon.style.filter = "none";
         authorProfileFavouriteLabel.textContent = "Remove from favourites";
         authorProfileFavourite.title = "Remove from favourites";
     } else {
-        authorProfileFavouriteIcon.src = "../css/images/one-star-outline-icon.svg";
+        authorProfileFavouriteIcon.src = "images/one-star-outline-icon.svg";
         authorProfileFavouriteIcon.style.filter = "contrast(0%)";
         authorProfileFavouriteLabel.textContent = "Add to favourites";
         authorProfileFavourite.title = "Add to favourites";
@@ -1100,13 +1100,13 @@ function openAuthorProfile(author) {
         const favSearch = favAuthors.searchForValue("key", author["key"]);
         if (favSearch.length) {
             favAuthors.deleteObject(favSearch[0].objectStorageKey);
-            authorProfileFavouriteIcon.src = "../css/images/one-star-outline-icon.svg";
+            authorProfileFavouriteIcon.src = "images/one-star-outline-icon.svg";
             authorProfileFavouriteIcon.style.filter = "contrast(0%)";
             authorProfileFavouriteLabel.textContent = "Add to favourites";
             authorProfileFavourite.title = "Add to favourites";
         } else {
             favAuthors.addObject([ author["key"], author["name"], author["feature_key"]]);
-            authorProfileFavouriteIcon.src = "../css/images/one-star-icon.svg";
+            authorProfileFavouriteIcon.src = "images/one-star-icon.svg";
             authorProfileFavouriteIcon.style.filter = "none";
             authorProfileFavouriteLabel.textContent = "Remove from favourites";
             authorProfileFavourite.title = "Remove from favourites";
