@@ -17,7 +17,7 @@ Modules, objects and common functions
 ===============================================================================*/
 
 import { Navigator } from "./modules/navigator.mjs";
-import { BookSearcher } from "./modules/search3.mjs";
+import { BookSearcher } from "./modules/search.mjs";
 import { ObjectStorage } from "./modules/objectstorage.mjs";
 import { toCapitalized } from "./modules/strings.mjs";
 
