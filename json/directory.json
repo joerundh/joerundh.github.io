@@ -1,0 +1,78 @@
+[
+    {
+        "title": "HTML and CSS",
+        "items": [
+            {
+                "title":    "Oppgave 1",
+                "name":     "HTML-and-CSS-Oppgave-1"
+            },
+            {
+                "title": "Oppgave 2",
+                "name": "HTML-and-CSS-Oppgave-2"
+            },
+            {
+                "title": "Oppgave 3",
+                "name": "HTML-and-CSS-Oppgave-3"
+            },
+            {
+                "title": "Oppgave 4",
+                "name": "HTML-and-CSS-Oppgave-4"
+            }
+        ]
+    },
+    {
+        "title": "Javascript Basic",
+        "items": [
+            {
+                "title": "Oppgave 1",
+                "name": "Javascript-Basic-Oppgave-1"
+            },
+            {
+                "title": "Oppgave 2",
+                "name": "Javascript-Basic-Oppgave-2"
+            },
+            {
+                "title": "Oppgave 3",
+                "name": "Javascript-Basic-Oppgave-3"
+            },
+            {
+                "title": "Oppgave 4",
+                "name": "Javascript-Basic-Oppgave-4"
+            }
+        ]
+    },
+    {
+        "title": "Javascript Advanced",
+        "items": [
+            {
+                "title": "Minioppgave",
+                "name": "Javascript-Advanced-Minioppgave"
+            },
+            {
+                "title": "Oppgave 1",
+                "name": "Javascript-Advanced-Oppgave-1"
+            },
+            {
+                "title": "Oppgave 2",
+                "name": "Javascript-Advanced-Oppgave-2"
+            },
+            {
+                "title": "Oppgave 3",
+                "name": "Javascript-Advanced-Oppgave-3"
+            }
+        ]
+    },
+    {
+        "title": "CSS Advanced",
+        "items": [
+            {
+                "title": "Oppgave 1",
+                "name": "CSS-Advanced-Oppgave-1"
+            },
+            {
+                "title": "Oppgave 2",
+                "name": "CSS-Advanced-Oppgave-2"
+            }
+        ]
+    }
+]
