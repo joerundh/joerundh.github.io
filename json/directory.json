@@ -82,5 +82,14 @@
                 "name":     "CSS-Advanced-Oppgave-3"
             }
         ]
+    },
+    {
+        "title": "React",
+        "items": [
+            {
+                "title":    "Oppgave 1",
+                "name":     "React-Oppgave-1"
+            }
+        ]
     }
 ]
