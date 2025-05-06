@@ -89,6 +89,10 @@
             {
                 "title":    "Oppgave 1",
                 "name":     "React-Oppgave-1"
+            },
+            {
+                "title":    "Oppgave 2",
+                "name":     "React-Oppgave-2"
             }
         ]
     }
