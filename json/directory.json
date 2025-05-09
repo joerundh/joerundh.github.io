@@ -93,6 +93,10 @@
             {
                 "title":    "Oppgave 2",
                 "name":     "React-Oppgave-2"
+            },
+            {
+                "title":    "Påskeprosjekt: Fargevelger",
+                "name":     "React-Fargevelger"
             }
         ]
     }
