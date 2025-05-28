@@ -28,7 +28,7 @@ function generateSectionList(sectionIndex, sectionObject) {
             listItem.style.listStyleType = "square";
 
             let aElement = document.createElement("a");
-            aElement.href = `./${item.name}`;
+            aElement.href = item.url ? item.url : `./${item.name}`;
             aElement.target = "_blank";
             aElement.innerHTML = `${sectionIndex + 1}.${itemIndex + 1} ${item.title}`;
             listItem.appendChild(aElement);

@@ -96,7 +96,8 @@
             },
             {
                 "title":    "Oppgave 4",
-                "name":     "React-Oppgave-4"
+                "name":     "React-Oppgave-4",
+                "url":      "https://react-oppgave-4.vercel.app"
             },
             {
                 "title":    "Påskeprosjekt: Fargevelger",
